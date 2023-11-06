@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InicioPageComponent } from './pages/inicio-page/inicio-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./landing.module').then(m => m.LandingModule)
+    component: InicioPageComponent
   },
 ];
 
