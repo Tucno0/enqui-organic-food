@@ -5,8 +5,8 @@ import { InicioPageComponent } from './landing/pages/inicio-page/inicio-page.com
 const routes: Routes = [
   {
     path: '',
-    // loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule)
-    component: InicioPageComponent
+    loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule)
+    // component: InicioPageComponent
   },
   {
     path: '**',
